@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Checker</title>
+</head>
+<body>
+    <h2>Weather Checker</h2>
+    <form method="post">
+        City: <input type="text" name="city"><br><br>
+        API Key: <input type="text" name="api_key"><br><br>
+        <input type="submit" value="Check Weather">
+    </form>
+
+    {% if weather %}
+        {% if weather.error %}
+            <p>{{ weather.error }}</p>
+        {% else %}
+            <h3>Weather in {{ weather.city }}</h3>
+            <p>Temperature: {{ weather.temp }}°C</p>
+            <p>Humidity: {{ weather.humidity }}%</p>
+            <p>Description: {{ weather.description }}</p>
+            <p>Wind Speed: {{ weather.wind_speed }} m/s</p>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
