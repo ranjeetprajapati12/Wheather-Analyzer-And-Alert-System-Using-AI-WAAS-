@@ -1,5 +1,5 @@
 # Weather Checker Project
-
+<h>Author: Ranjeet Prajapati </h>
 ## Features
 - Console version
 - GUI (Tkinter) version
