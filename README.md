@@ -1,4 +1,4 @@
-# Weather Checker Project
+# Weather Analyzer and Alert System (WAAS)
 <h>Author: Ranjeet Prajapati </h>
 ## Features
 - Console version
